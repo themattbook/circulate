@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Navigation />
+    <Body />
   </div>
 </template>
 
 <script>
 import Navigation from "./components/Navigation.vue";
+import Body from "./components/Body.vue";
 
 export default {
   name: "App",
   components: {
-    Navigation
+    Navigation,
+    Body
   }
 };
 </script>

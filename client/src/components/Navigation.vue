@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar shadow-xl" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
@@ -22,9 +22,8 @@
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
-            <a class="navbar-item is-active">Home</a>
-
-            <a class="navbar-item is-active">Documentation</a>
+            <a class="navbar-item button is-dark mr-2">Login</a>
+            <a class="navbar-item button is-danger">Sign Up</a>
           </div>
         </div>
       </div>
@@ -34,27 +33,13 @@
 
 <script>
 export default {
-  name: "Navigation",
-  props: {
-    msg: String
-  }
+  name: "Navigation"
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.svg-inline--fa {
+  margin-right: 5px;
 }
 </style>
