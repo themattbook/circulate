@@ -45,6 +45,12 @@
         </a>
       </li>
     </ul>
+    <hr />
+    <ul class="menu-list">
+      <li>
+        <a class="button is-large is-light">Create</a>
+      </li>
+    </ul>
   </aside>
 </template>
 

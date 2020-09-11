@@ -33,7 +33,7 @@
             </a>
             <a class="level-item" aria-label="like">
               <span class="icon is-small">
-                <i class="fas fa-heart" aria-hidden="true"></i>
+                <i class="far fa-heart" aria-hidden="true"></i>
               </span>
             </a>
           </div>
@@ -49,3 +49,9 @@ export default {
   props: ["displayname", "username", "postedat", "textmessage", "profileimg"],
 };
 </script>
+
+<style scoped>
+.icon {
+  margin-right: 1em;
+}
+</style>
