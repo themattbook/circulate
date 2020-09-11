@@ -2,28 +2,47 @@
   <aside class="menu">
     <ul class="menu-list">
       <li>
-        <a class="is-active">Home</a>
+        <a class="is-active">
+          <i class="fas fa-house-user"></i>Home
+        </a>
       </li>
       <li>
-        <a>Explore</a>
+        <a>
+          <i class="fas fa-binoculars"></i>Explore
+        </a>
       </li>
       <li>
-        <a>Notifications</a>
+        <a>
+          <i class="fas fa-flag"></i>Notifications
+        </a>
       </li>
       <li>
-        <a>Messages</a>
+        <a>
+          <i class="fas fa-comment-alt"></i>Messages
+        </a>
       </li>
       <li>
-        <a>Bookmarks</a>
+        <a>
+          <i class="fas fa-bookmark"></i>Bookmarks
+        </a>
       </li>
       <li>
-        <a>Lists</a>
+        <a>
+          <i class="fas fa-clipboard-list"></i>Lists
+        </a>
+      </li>
+    </ul>
+    <hr />
+    <ul class="menu-list">
+      <li>
+        <a>
+          <i class="fas fa-user"></i>Profile
+        </a>
       </li>
       <li>
-        <a>Profile</a>
-      </li>
-      <li>
-        <a>Settings</a>
+        <a>
+          <i class="fas fa-cog"></i>Settings
+        </a>
       </li>
     </ul>
   </aside>
@@ -42,5 +61,11 @@ export default {
 }
 .menu li {
   margin-top: 0.5rem;
+}
+.menu svg {
+  margin-right: 1rem;
+}
+.menu hr {
+  background-color: #ececec;
 }
 </style>

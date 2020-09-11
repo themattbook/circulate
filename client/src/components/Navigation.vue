@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar shadow-xl mb-5" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-transparent mt-3 mb-5" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
@@ -11,7 +11,7 @@
           class="navbar-burger burger"
           aria-label="menu"
           aria-expanded="false"
-          data-target="navbarBasicExample"
+          data-target="navMenu"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -19,7 +19,7 @@
         </a>
       </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
             <a class="navbar-item button is-dark mr-2">Login</a>

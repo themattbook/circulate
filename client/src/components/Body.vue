@@ -11,7 +11,7 @@
           :username="post.username"
           :postedat="post.postdate"
           :textmessage="post.message"
-          v-for="post in properties"
+          v-for="post in posts"
           :key="post.name"
         />
       </div>
@@ -30,7 +30,31 @@ export default {
   },
   data() {
     return {
-      properties: [
+      posts: [
+        {
+          image: "https://bulma.io/images/placeholders/128x128.png",
+          name: "Random Person",
+          username: "@random",
+          postdate: "09/11/2020",
+          message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+        },
+        {
+          image: "https://bulma.io/images/placeholders/128x128.png",
+          name: "Someone New",
+          username: "@someusername",
+          postdate: "09/11/2020",
+          message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+        },
+        {
+          image: "https://bulma.io/images/placeholders/128x128.png",
+          name: "Yetti Another",
+          username: "@yetti",
+          postdate: "09/11/2020",
+          message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+        },
         {
           image: "https://bulma.io/images/placeholders/128x128.png",
           name: "Random Person",
@@ -61,4 +85,5 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

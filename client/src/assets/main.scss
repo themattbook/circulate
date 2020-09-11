@@ -5,7 +5,11 @@ $danger: $circulate;
 $link: $circulate;
 
 html {
-  background-color: #f3f3f3 !important;
+  background-color: #fcfcfc !important;
+}
+
+.is-transparent {
+  background-color: transparent !important;
 }
 
 // Bulma Import
