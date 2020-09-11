@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar shadow-xl" role="navigation" aria-label="main navigation">
+  <nav class="navbar shadow-xl mb-5" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: "Navigation"
+  name: "Navigation",
 };
 </script>
 

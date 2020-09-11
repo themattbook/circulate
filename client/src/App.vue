@@ -13,8 +13,8 @@ export default {
   name: "App",
   components: {
     Navigation,
-    Body
-  }
+    Body,
+  },
 };
 </script>
 
@@ -22,7 +22,6 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 </style>
