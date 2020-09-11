@@ -5,7 +5,15 @@
         <Menu />
       </div>
       <div class="column is-9 is-offset-1">
-        <Post />
+        <Post
+          :profileimg="post.image"
+          :displayname="post.name"
+          :username="post.username"
+          :postedat="post.postdate"
+          :textmessage="post.message"
+          v-for="post in properties"
+          :key="post.name"
+        />
       </div>
     </div>
   </div>
@@ -22,10 +30,32 @@ export default {
   },
   data() {
     return {
-      properties: {
-        image:
-          "https://images.pexels.com/photos/1274260/pexels-photo-1274260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      },
+      properties: [
+        {
+          image: "https://bulma.io/images/placeholders/128x128.png",
+          name: "Random Person",
+          username: "@random",
+          postdate: "09/11/2020",
+          message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+        },
+        {
+          image: "https://bulma.io/images/placeholders/128x128.png",
+          name: "Someone New",
+          username: "@someusername",
+          postdate: "09/11/2020",
+          message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+        },
+        {
+          image: "https://bulma.io/images/placeholders/128x128.png",
+          name: "Yetti Another",
+          username: "@yetti",
+          postdate: "09/11/2020",
+          message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+        },
+      ],
     };
   },
 };

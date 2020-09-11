@@ -3,17 +3,21 @@
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
-          <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image" />
+          <img :src="profileimg" alt="Image" />
         </figure>
       </div>
       <div class="media-content">
         <div class="content">
-          <p>
-            <strong>John Smith</strong>
-            <small>@johnsmith</small>
-            <small>31m</small>
-            <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-          </p>
+          <div class="level is-mobile">
+            <div class="level-left">
+              <strong class="mr-1">{{ displayname }}</strong>
+              <small>{{ username }}</small>
+            </div>
+            <div class="level-right">
+              <small>{{ postedat }}</small>
+            </div>
+          </div>
+          {{ textmessage }}
         </div>
         <nav class="level is-mobile">
           <div class="level-left">
@@ -42,5 +46,6 @@
 <script>
 export default {
   name: "Post",
+  props: ["displayname", "username", "postedat", "textmessage", "profileimg"],
 };
 </script>

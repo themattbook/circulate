@@ -4,6 +4,10 @@ $circulate: #dd00dd;
 $danger: $circulate;
 $link: $circulate;
 
+html {
+  background-color: #f3f3f3 !important;
+}
+
 // Bulma Import
 @import "~bulma";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
