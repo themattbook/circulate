@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div class="mb-6">
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
@@ -13,40 +13,43 @@
               <strong class="mr-1">{{ displayname }}</strong>
               <small>{{ username }}</small>
             </div>
-            <div class="level-right">
-              <small>{{ postedat }}</small>
-            </div>
           </div>
           {{ textmessage }}
         </div>
         <nav class="level is-mobile">
           <div class="level-left">
             <a class="level-item" aria-label="reply">
-              <span class="icon is-small">
-                <i class="fas fa-reply" aria-hidden="true"></i>
-              </span>
+              Like
             </a>
             <a class="level-item" aria-label="retweet">
-              <span class="icon is-small">
-                <i class="fas fa-retweet" aria-hidden="true"></i>
-              </span>
+              Reply
             </a>
             <a class="level-item" aria-label="like">
-              <span class="icon is-small">
-                <i class="far fa-heart" aria-hidden="true"></i>
-              </span>
+              {{ postedat }}
             </a>
           </div>
         </nav>
+        <Comment v-if="hascomment" />
       </div>
     </article>
   </div>
 </template>
 
 <script>
+import Comment from "./Comment.vue";
 export default {
   name: "Post",
-  props: ["displayname", "username", "postedat", "textmessage", "profileimg"],
+  props: [
+    "displayname",
+    "username",
+    "postedat",
+    "textmessage",
+    "profileimg",
+    "hascomment"
+  ],
+  components: {
+    Comment
+  }
 };
 </script>
 

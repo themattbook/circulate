@@ -4,6 +4,16 @@ $circulate: #dd00dd;
 $danger: $circulate;
 $link: $circulate;
 
+html,
+body {
+  height: 100vh;
+  overflow: hidden !important;
+}
+.is-post {
+  height: 100vh;
+  overflow: auto !important;
+}
+
 .is-transparent {
   background-color: transparent !important;
 }

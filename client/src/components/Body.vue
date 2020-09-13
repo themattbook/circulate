@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
-    <div class="columns">
-      <div class="column is-2">
+  <div class="container mt-6">
+    <div class="columns mt-4">
+      <div class="is-menu column is-2 mt-6">
         <Menu />
       </div>
-      <div class="column is-9 is-offset-1">
+      <div class="column is-9 is-offset-1 mt-6 is-post">
         <Post
           :profileimg="post.image"
           :displayname="post.name"
@@ -13,6 +13,7 @@
           :textmessage="post.message"
           v-for="post in posts"
           :key="post.name"
+          :hascomment="post.comment"
         />
       </div>
     </div>
@@ -26,7 +27,7 @@ export default {
   name: "Body",
   components: {
     Menu,
-    Post,
+    Post
   },
   data() {
     return {
@@ -38,6 +39,7 @@ export default {
           postdate: "09/11/2020",
           message:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+          comment: true
         },
         {
           image: "https://bulma.io/images/placeholders/128x128.png",
@@ -46,6 +48,7 @@ export default {
           postdate: "09/11/2020",
           message:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+          comment: true
         },
         {
           image: "https://bulma.io/images/placeholders/128x128.png",
@@ -54,6 +57,7 @@ export default {
           postdate: "09/11/2020",
           message:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+          comment: false
         },
         {
           image: "https://bulma.io/images/placeholders/128x128.png",
@@ -62,6 +66,7 @@ export default {
           postdate: "09/11/2020",
           message:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+          comment: false
         },
         {
           image: "https://bulma.io/images/placeholders/128x128.png",
@@ -70,6 +75,7 @@ export default {
           postdate: "09/11/2020",
           message:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
+          comment: true
         },
         {
           image: "https://bulma.io/images/placeholders/128x128.png",
@@ -78,12 +84,12 @@ export default {
           postdate: "09/11/2020",
           message:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.",
-        },
-      ],
+          comment: true
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
